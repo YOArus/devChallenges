@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #677489;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    background-color: #F2F5F9;    
+}
+
+h2 { font-size: 1.40rem; letter-spacing: -0.1rem;}
+
+img { width: 100%; }
+
+.card {
+    width: 375px;
+    height: auto;
+}
+
+.card-body { padding:1rem 1.8rem 1.5rem 1.8rem;}
+
+.card-title, .card-name  { color: #111729; font-family: 'Poppins', sans-serif;}
+
+.card-text { font-size: 0.92rem;}
+
+.card-avatar {
+    border: 0.25rem solid #F2F5F9;
+    width: 40px;
+    height:40px;
+    margin-right: 4px;
+}
+
+.card-footer ul .card-name { font-size: 0.85rem; margin-bottom: -0.2rem;}
+.card-footer ul .card-status { font-size: 0.768rem;}
+
+.wave {position: absolute; top: 40.50%;}
