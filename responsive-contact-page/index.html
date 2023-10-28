@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact Page</title>
+</head>
+<body>
+    <header class="logo">
+        <img src="contact-form-icon.svg" alt="icon page">
+    </header>
+    <main class="main">
+        <h1 class="title">Interested in our business pricing?</h1>
+        <p class="paragraph">Fill out the form to view details and we’ll contact you as soon as possible.</p>
+
+        <form action="/" class="form">
+
+            <div class="user-data">
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="user-name" placeholder="Ethan Johnson">
+                </div>
+                <div>
+                    <label for="email">Company Email</label>
+                    <input type="email" id="email" name="user-email" placeholder="ethan@johnson.com">
+                </div>
+            </div>
+
+            <div class="content-select">
+                <div class="select">
+                    <label for="csize">Company Size</label>
+                    <select id="csize" name="Company-size">
+                        <option value="50-100">50-100 employees</option>
+                        <option value="100-550">100-550 employees</option>
+                        <option value="500-1000">550-1000 employees</option>
+                    </select>
+                    <img src="Expand_down.svg" alt="expand down icon">
+                </div>
+                <div class="select">
+                    <label for="subject">Subject</label>
+                    <select id="subject" name="subject">
+                        <option value="landing-pages">Building Landing pages</option>
+                        <option value="app-development">App development</option>
+                        <option value="programing">Programming game and more</option>
+                    </select>
+                    <img src="Expand_down.svg" alt="expand down icon">
+                </div>
+            </div>
+
+            <label for="message">Message</label>
+            <textarea name="message" id="message" cols="30" rows="10">50-100 employees</textarea>
+
+            <button class="btn" type="submit">Contact Sales</button>
+            
+        </form>
+    </main>
+</body>
+</html>

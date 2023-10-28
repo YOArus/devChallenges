@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+body {
+    font-size:16px;
+    font-weight: 400;
+    color: #fff;
+    min-height: 100vh;
+    background-image: url('bg-image.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* *********HEADER************ */
+.logo {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 1.5rem;
+}
+
+
+/* *********MAIN************ */
+.main {
+    max-width: 375px;
+    margin: 60px auto;
+}
+
+.title { 
+    font-size: 2.5rem;
+    margin-bottom:1rem;
+}
+
+.paragraph { font-size: 1rem;}
+
+.title, .paragraph { text-align: center; }
+
+/* *********FORM************ */
+.form {
+    display: grid;
+    margin-top: 2.5rem;
+    background-color: rgba(255,255,255,.2);
+    padding: 2rem 2rem;
+    border-radius: 20px;
+    min-width: 400px;
+    line-height: 1.7;
+}
+
+/* ***label** */
+.form label { font-size: 14px; }
+
+/* ***input** */
+.form input, #csize,  #subject, #message, .btn {
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    padding: 16px;
+    margin-bottom: 1.2rem;
+}
+
+.form #name::placeholder, .form #email::placeholder  {
+    color: #CDD5E0;
+    font-weight: 600;
+}
+
+/* ***select** */
+.form .select { position: relative; }
+
+.select select{
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+    position: relative;
+    cursor: pointer;
+    outline-width: 0;
+    font-stretch: normal;
+    line-height: 1.29;
+    border-bottom: 0px solid #757575
+}
+.select select::-ms-expand { display: none; }
+
+.select img {
+    font-size: 1.5rem;
+    color: #111729;
+	position: absolute;
+    top: 40px;
+    right: 20px;
+    cursor: pointer;
+}
+/* ***select option** */
+.select select option { color: #3a3a3a; }
+ 
+/* ***select and textarea** */
+.form #csize, #subject, #message { font-weight: 600;}
+.form #message { resize:none;}
+
+/* ***btn** */
+.form .btn {
+    width: 100%;
+    height: 50px;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #4036A9;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.form .btn:hover {
+    color: #fff;
+    background-color: #e4569f;
+}
+
+
+@media (min-width:600px) {
+
+    body {
+        height: 100%;
+    }
+    .logo {margin: 2rem 2.5rem; }
+
+    .main { max-width: 725px; }
+    .main .title { font-size: 64px;}
+    .main .paragraph { font-size: 32px; }
+
+    .form { margin-top: 4rem;}
+
+    .form .user-data, .form .content-select {
+        display: inline-flex;
+        gap: 14px;
+    }
+
+    .user-data div, .content-select div { width: 90%; }
+    
+}
