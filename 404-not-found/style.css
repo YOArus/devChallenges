@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Montserrat:wght@500;700&family=Space+Mono:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Space Mono', monospace;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    color: #333333;
+}
+
+main {
+    max-width: 375px;
+    padding: 10px;
+}
+
+.heading {
+    font-family: 'Inconsolata', monospace;
+    font-weight: 700;
+    font-size: 24px;
+    margin: 20px 0 80px 0;
+    text-transform: uppercase;
+}
+
+.container {
+    width: 100%;
+    padding: 24px 0;
+}
+
+.hero-img {
+    max-width: 350px;
+}
+
+.hero-img img {
+    width: 100%;
+}
+
+.content {
+    font-weight: 400;
+}
+.content__title {
+    font-size: 48px;
+    width: 360px;
+    font-weight: 700;
+    margin: 30px 0;
+}
+.content__paragraph {
+    width: 320px;
+    font-size: 18px;
+    color: #4F4F4F;
+}
+
+.content__btn {
+    text-transform: uppercase;
+    margin: 50px 0 70px 0;
+    width: 216px;
+    height: 68px;
+    color: #FFF;
+    outline: none;
+    border: 0;
+    background-color: #333333;
+    font-family: Space Mono;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: -0.035em;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.content__btn:hover {
+    background-color: #f7542e;
+}
+
+
+.footer {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #BDBDBD;
+    text-align: center;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #f7542e;
+  }
+
+@media (min-width:700px) {
+    main {
+        max-width: 1200px;
+    }
+
+    .hero-img {
+        min-width: 550px;
+    }
+
+    .container {
+        min-width:100%;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        gap: 5em;
+        line-height: 1.5;
+    }
+  
+    .content__title {
+        font-size: 60px; 
+        width: 600px;
+    }
+    .content__paragraph {
+        font-size: 24px;
+        width: 400px;
+    }
+    
+    .content__btn {
+        width: 300px;
+        height: 70px;
+        font-size: 24px;      
+        margin-top: 80px;
+    }
+
+    .footer {
+        font-weight: 500; 
+    }
+  }
