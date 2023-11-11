@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Lora:wght@500;700&family=Montserrat:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #FFF;
+}
+
+body {
+    width: 100%;
+    height: 100vh;   
+    font-family: 'Montserrat', sans-serif;
+    background-color: #181719;
+    font-size: 14px;
+    font-weight: 400;
+    position: relative;
+}
+
+a { text-decoration: none; }
+
+
+button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: block;
+}
+
+.container {
+    max-width:375px;
+    width: 100%;
+    padding: 30px;
+}
+
+/**------------------ page menu ----------------------**/
+.page__menubar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: #181719;
+    width: 100%;
+    z-index: 900;  
+    padding: 14px 30px;  
+}
+
+/**-------------------- nav  --------------------------**/
+/* ________ brand _____________ */
+.page__brand {
+    border: 1px solid #FFF;
+    padding: 10px 14px; 
+}
+
+.page__brand span {
+    font-weight: 200;
+    font-family: 'Crimson Pro', serif; 
+}
+
+/* ______nav-items ________ */
+.page__nav-items   {
+    display: none;
+    list-style: none;
+}
+
+.page__nav-items li a {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 10px 0;
+    display: inline-block;
+    border-bottom: 2px solid transparent; 
+    transition: .3s ease-in;
+    color: #828282;
+}
+
+.page__nav-items li .home, li a:hover { 
+    color: #FFF;
+    border-bottom-color:#FFF; }
+
+#navigation.active {
+    z-index: 10000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #181719;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+}
+
+/* ______ btn ________ */
+#open-btn {
+    position: absolute;
+    right: 0;
+    margin-right: 10px;
+}
+#close-btn { 
+    z-index: 100000;
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+ }
+
+#close-btn.active { display: block; }
+
+
+/**----------------------- page - content  -----------------------**/
+.page {
+    margin-top: 5em;
+}
+
+/* ______title ________ */
+.page__heading {
+    font-family: 'Lora', serif; 
+    font-weight: 500;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+/* ______text ________ */
+.page__paragraph { width: 250px; }
+
+/* ______ cta  ________ */
+.page__cta {
+    margin:  30px 0 40px 0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    color: #FFF;
+}
+
+.page__cta .cta:hover { color: #828282;}
+
+/**------------------ page img ----------------------**/
+.page__heroImg { position: relative; }
+
+.page__img { min-width: 430px; }
+
+.page__img img { 
+    width: 100%;
+    height: auto;
+}
+/**------------------ page card ----------------------**/
+.page__card-designer {
+    width: 370px;
+    background: #181719;
+    font-weight: 500;
+    padding: 20px;
+    position: absolute;
+    top: 260px;
+    right: -100px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    padding: 30px 0 40px 40px;
+}
+
+.designer-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    line-height: 1.5;
+}
+
+.designer-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.designer-name { font-size: 12px; }
+
+.designer-rol {
+    font-size: 10px;
+    color: #828282;
+}
+.page__card-text {
+    margin-top: 20px;
+    width: 210px;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Lora', serif; 
+}
+
+
+/**------------------ footer ----------------------**/
+.page__footer  {
+    display: block;
+    margin: 12em 0 10px 0;
+    text-align: center;
+    font-weight: 700;
+    color: #828282;
+    width: 420px;
+}
+
+.page__footer p span { text-decoration: underline; }
+
+.page__footer p .link:hover { 
+    background-color: #FFF;
+    color: #181719;
+ }
+
+/**------------ desktop -----------**/
+@media (min-width:700px) {
+    .container {
+        max-width:1300px;
+        margin: 0 auto;
+    }
+
+    /**---- menu ----------*/
+    .page__menubar {
+        padding: 1.5rem 3.5rem 1rem 4rem;
+    }
+
+    .page__nav-items  {
+        display: flex;
+        gap: 6em;
+    }
+    .page__nav-items li a { font-weight: 700; }
+    
+    #open-btn { display: none; }
+
+    /**------------ page --------------*/
+    .page {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10em;
+    }
+
+    .page__img { width: 700px; }
+
+    .page__heading { font-size: 48px; }
+
+    .page__paragraph {
+        font-size: 24px;
+        width: 410px;
+    }
+    
+    .page__cta { font-size: 18px; }
+
+    /**------------ card --------------*/
+    .page__card-designer {
+        width: 410px;
+        top: 457px;
+        right: 24px; 
+    }
+    
+    .designer-name { font-size: 14px; }
+    .designer-rol { font-size: 12px; }
+    .page__card-text { 
+        width:287px;
+        font-size: 24px;
+    }
+
+    /**------- footer ---------**/
+    .page__footer {  
+        width: auto;
+    }
+    
+}
+
+
