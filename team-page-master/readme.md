@@ -18,7 +18,7 @@
 - [DEMO](https://devchallenges-team-page-master.netlify.app/)
 
 
-![screenshot]()
+![screenshot](https://github.com/YOArus/devChallenges/blob/e3f9328c44e86ff13ca623e7ff9a553872542d97/team-page-master/img/dev-team-page.png)
 
 
 This is a challenge from Dev Challenges, specialized in frontend develop, is a team page master.
