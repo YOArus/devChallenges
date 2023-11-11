@@ -23,8 +23,8 @@ This is a challenge from Dev Challenges, specialized in frontend develop, is a 4
 
 ### Built With
 
-- [HTML] - Layout and web structure.
-- [CSS3] - Style design.
+- HTML - Layout and web structure.
+- CSS3 - Style design.
 
 ## Contact
 
