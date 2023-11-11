@@ -70,7 +70,7 @@ button {
 .page__nav-items li a {
     font-size: 18px;
     font-weight: 500;
-    margin: 10px 0;
+    margin: 15px 0;
     display: inline-block;
     border-bottom: 2px solid transparent; 
     transition: .3s ease-in;
