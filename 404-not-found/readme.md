@@ -13,7 +13,7 @@
 
 ## Dev Challenges: 404 Not Found
 
-## DEMO [https://devchallengeio-404-not-found.netlify.app/]
+-DEMO ![https://devchallengeio-404-not-found.netlify.app/]
 
 ![screenshot](https://github.com/YOArus/devChallenges/blob/6b4f094cf9b5b6193a00b57e5cd234288c9fde17/404-not-found/design-404.png)
 
