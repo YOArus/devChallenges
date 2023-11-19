@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+main { max-width: 375px; }
+
+.card-img {
+    width: 102px;
+    height: 102px;
+    border-radius: 16px;
+}
+
+.card-title { font-size: 14px;}
+.card-text { font-size: 10px;}
+
+.card-title, .button b {
+    color: #4E5150;
+}
+.button {
+    display: block;
+    max-width: 200px;
+    border-radius: 12px;
+    background-color: #E5E5E5;
+    color: #BDBDBD;
+    font-size: 12px;
+    height: 52px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.button:hover { background-color: #4E5150;}
+.button:hover b { color: #FFF; }
+
+/** gallery **/
+.gallery {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 124px;
+    grid-template-areas: 
+    "img1 img2 img2"
+    "img3 img3 img4"
+    "img5 img6 img4";
+    gap: .6em;
+}
+
+.gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0px 4px 6px 0px #00000026;
+}
+
+.gallery__picture--g1  { grid-area: img1; }
+.gallery__picture--g2  { grid-area: img2; }
+.gallery__picture--g3  { grid-area: img3; }
+.gallery__picture--g4  { grid-area: img4; }
+.gallery__picture--g5  { grid-area: img5; }
+.gallery__picture--g6  { grid-area: img6; }
+
+
+
+/** footer **/
+
+.footer p, p a { color: #B9BDCF; }
+.footer a:hover { color: #4E5150; }
+
+@media (min-width:700px) {
+   
+    main { min-width: 725px; }
+
+    .card-img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .card-title { font-size: 24px;}
+    .card-text { font-size: 14px;}
+
+    .gallery {
+        grid-auto-rows: 240px;
+        gap: 1em;
+        margin-top: 3em;
+    }
+
+    .button { 
+        width: 100px;
+        height: 67px;
+        font-size: 14px;
+     }
+    .button b  {  font-size: 18px; }
+    
+}
