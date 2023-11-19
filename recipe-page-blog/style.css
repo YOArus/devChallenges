@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    display: grid;
+    place-items: center;
+    color: #333333;
+} 
+
+
+.blog { max-width: 375px; }
+
+/** ------------ MAIN CONTENT -------------- **/
+/* title */
+.blog__main-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+}
+
+/* text */
+.blog__main-paragraph  {
+    max-width: 320px;
+    margin-left: 30px;
+    font-size: 12px;
+    color: #4F4F4F;
+}
+
+/* icon */
+.blog__main-paragraph--icon {
+    position: absolute;
+    top:40px;
+    left: 5px;
+}
+/* img */
+.blog__main-heroImg img { margin-top: 34px; }
+
+
+/** ------------ SECOND CONTENT -------------- **/
+
+/***** DATA ***** */
+/*YIELDS*/
+.blog__data-yields { padding-top: 20px; }
+.blog__data-yields div p { color: #F2994A;}
+
+/*TIME*/
+.blog__data-time div p { color: #333333;}
+
+/*YIELDS / TIME : Font*/
+.blog__data-yields div h3, .blog__data-time div h3 { color:#BDBDBD; }
+
+.blog__data-yields div h3, .blog__data-time div h3 { font-size: 8px; }
+.blog__data-yields div p, .blog__data-time  div p { font-size: 10px; }
+
+/******************** INGREDIENTS ************************** */
+/*INGREDIENTS FONT SIZE*/
+.blog__recipe-ingredients h2 { font-size: 18px; }
+
+/*INGREDIENTS CHEESECAKE FONT SIZE*/
+.blog__recipe-ingredients--cheesecake h3 { font-size: 18px; }
+
+/*INGREDIENTS CRACKER FONT SIZE*/
+.blog__recipe-ingredients--cracker h3 { font-size: 16px; }
+
+/*INGREDIENTS CRACKER LABEL*/
+.blog__recipe-ingredients--cracker-list .item-list label { min-width: 26.028rem; }
+
+/*INGREDIENTS CRACKER & CHEESECACKE CONTAINER*/
+.blog__recipe-ingredients--cracker, .blog__recipe-ingredients--cheesecake  { color: #333333; }
+
+/*INGREDIENTS CRACKER & CHEESECACKE LIST IMPUT*/
+.blog__recipe-ingredients--cracker-list .item-list input, 
+.blog__recipe-ingredients--cheesecake-list .item-list input {
+    min-width: 21px;
+    min-height: 21px;
+}
+
+/*INGREDIENTS & INSTRUCTIONS HEADING*/
+.blog__recipe-ingredients h2, .blog__recipe-ingredients h3, 
+.blog__recipe-instructions h2,.blog__recipe-instructions h3 { font-family: 'Playfair Display', serif; }
+
+/*********************** INSTRUCTIONS ************************** */
+/*INSTRUCTION SUBTITLE*/
+.blog__recipe-instructions h2 { font-size: 24px; }
+
+/*ITEMS BOX NUMBER*/
+.item-number {
+    width: 36px;
+    height: 36px;
+    padding: 20px;
+    background-color: #F2994A;
+    position: relative;
+}
+.item-number span {
+    position: absolute;
+    font-family: 'Playfair Display', serif;
+    top: -2px;
+    right: 14px;
+}
+/*ITEMS BOX TEXT*/
+.item-text p {
+    font-size: 16px;
+    font-weight: 400;
+    padding-right: 24px;
+}
+
+/*INSTRUCTION SOURCE*/
+.blog__recipe-description--source { 
+    font-weight: 400;
+    font-size: 12px; 
+}
+.blog__recipe-description--source, .blog__recipe-description--source a{ color:#BDBDBD; }
+.blog__recipe-description--source a { text-decoration: none;}
+
+/*INSTRUCTION FOOTER*/
+.blog__footer p, a { color: #828282;}
+
+.blog__recipe-description--source a:hover, .blog__footer a:hover { color: #F2994A; }
+
+
+
+@media (min-width:700px) {
+    .blog { max-width: 1000px; }
+
+    /********** MAIN CONTENT *************/
+    .blog__main-title { font-size: 48px;}
+    
+    .blog__main-paragraph {
+        font-size: 14px;
+        min-width: 590px;
+        line-height: 1.5;
+        margin-left: 34px;
+    }
+
+    .blog__main-paragraph--icon {
+        top: 70px;
+        left: 8px;
+    }
+    
+    /*********** SECOND CONTENT *************/
+    .blog__recipe {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    /* ********* DATA *************/
+    .blog__recipe-data {
+        margin-top: 52px;
+        min-width: 216px;
+        height: 330px;
+        padding: 40px;
+        box-shadow: 0px 0px 20px 0px #0000001A;
+        border-radius: 12px;
+    }
+
+    /* DATA YIELDS */
+    .blog__data-yields div h3, .blog__data-time div h3 { font-size: 12px; }
+    .blog__data-yields div p, .blog__data-time  div p { font-size: 14px; }
+
+    /* DATA TIME */
+    .blog__data-time { flex-direction: column; }
+    .blog__data-time .time { margin-bottom: 16px; }
+     
+    /*****************  RECIPE ******************************/
+    .blog__recipe-description { padding-top: 20px; }
+
+    .blog__recipe-ingredients h2, .blog__recipe-instructions h2 { font-size: 24px; }
+    .blog__recipe-ingredients--cracker h3, .blog__recipe-ingredients--cheesecake h3 { font-size: 18px; }
+
+    .blog__recipe-ingredients--cracker .item-list label  { width: 554px;}
+    .blog__recipe-ingredients--cheesecake-list .item-list label { width: 550px; }
+
+    .blog__recipe-instructions--item  {margin-bottom: 20px;}
+    .item-text { width: 528px;}
+
+    /*****************  SOURCE ******************************/
+    .blog__recipe-description--source { font-size: 16px; }
+}
