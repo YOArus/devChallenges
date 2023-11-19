@@ -15,7 +15,7 @@
 ## Dev Challenges: Interior Consultant 
 
 
-- [DEMO]([https://devchallenges-team-page-master.netlify.app/](https://devchallenge-interior-consultant-page.netlify.app/))
+- [DEMO](https://devchallenge-interior-consultant-page.netlify.app/)
 
 
 ![screenshot](https://github.com/YOArus/devChallenges/blob/1abc40acf00b7819df774014fb50de2633482345/interior-consultant/img/dev-interior-page.png)
