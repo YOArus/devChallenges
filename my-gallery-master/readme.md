@@ -15,7 +15,7 @@
 ## Dev Challenges: My Gallery Master
 
 
-- [DEMO](https://devchallenges-team-page-master.netlify.app/)
+- [DEMO](https://app.netlify.com/teams/yoarus/overview)
 
 
 ![screenshot](https://github.com/YOArus/devChallenges/blob/4f65d972f193913d198e63d81bc2aec0b67eff7a/my-gallery-master/img/gallery%20design.png)
