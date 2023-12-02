@@ -75,9 +75,9 @@ body {
 .form .select { position: relative; }
 
 .select select{
-	appearance: none;
-	-webkit-appearance: none;
-	-moz-appearance: none;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
     position: relative;
     cursor: pointer;
     outline-width: 0;
@@ -90,7 +90,7 @@ body {
 .select img {
     font-size: 1.5rem;
     color: #111729;
-	position: absolute;
+    position: absolute;
     top: 40px;
     right: 20px;
     cursor: pointer;
