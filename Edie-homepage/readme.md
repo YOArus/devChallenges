@@ -15,10 +15,10 @@
 
 - [DEMO](https://devchallengeio-404-not-found.netlify.app/)
 
-![screenshot](Edie-homepage/img/edieHomepage-design.png)
+![screenshot](https://github.com/YOArus/devChallenges/blob/main/Edie-homepage/img/edieHomepage-design.png?raw=true)
 
 
-This is a challenge from Dev Challenges, specialized in frontend develop, is a 404 Not Found.
+This is a challenge from Dev Challenges, specialized in frontend develop, is a Edie Homepage.
 
 
 ### Built With
