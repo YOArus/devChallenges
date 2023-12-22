@@ -13,7 +13,7 @@
 
 ## Dev Challenges: Edie Homepage
 
-- [DEMO]()
+<!-- [DEMO]()-->
 
 ![screenshot](https://github.com/YOArus/devChallenges/blob/main/Edie-homepage/img/edieHomepage-design.png?raw=true)
 
